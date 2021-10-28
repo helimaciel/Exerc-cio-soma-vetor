@@ -1,0 +1,24 @@
+/*                       -Exercício Prático-
+ Dado um vetor de inteiros de x posições informadas pelo usuário, calcule e exiba
+a soma dos elementos do vetor.
+ */
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int TamanhoVetor = 0;
+        int SomaVetor = 0;
+        System.out.println("Digite o tamanho do vetor:" + " ");
+        TamanhoVetor = input.nextInt();
+        int vetor[] = new int[TamanhoVetor];
+
+        for (int i = 0; i < vetor.length; i++) {
+            vetor[i] = input.nextInt();
+            SomaVetor += vetor[i];
+        }
+        System.out.println(" " + SomaVetor);
+    }
+
+}
